@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 
-const navigate = useNavigate();
+
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -21,6 +21,7 @@ const Menu = () => {
 
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
+  const navigate = useNavigate();
 
   return (
     <div className="menu-container mt-2">
